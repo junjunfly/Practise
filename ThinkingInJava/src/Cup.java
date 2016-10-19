@@ -1,5 +1,6 @@
 /**
  * Created by LuJun on 2016/10/19.
+ * 静态初始化只做一次
  */
 public class Cup {
     Cup(int marker) {

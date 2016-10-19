@@ -1,5 +1,7 @@
 /**
  * Created by LuJun on 2016/10/19.
+ *
+ * 构造器初始化顺序
  */
 public class Window {
     Window(int marker) {
