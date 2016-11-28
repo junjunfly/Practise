@@ -2,21 +2,25 @@
  * Created by LuJun on 2016/10/19.
  */
 public class Tank {
-        boolean isFull = false;
-        Tank(boolean status){
-            isFull = status;
-        }
-    void empty(){
+    boolean isFull = false;
+
+    Tank(boolean status) {
+        isFull = status;
+    }
+
+    void empty() {
         isFull = false;
     }
-    protected void finalize() throws Throwable{
-        if(!isFull){
+
+    protected void finalize() throws Throwable {
+        if (!isFull) {
             System.out.println("Correct: is empty");
-        }else{
+        } else {
             System.out.println("Error: is full!");
         }
     }
-    public static void main(String args[]){
+
+    public static void main(String args[]) {
         new Tank(true);
         System.gc();
         System.runFinalization();
